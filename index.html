@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#444">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Cargando…</title>
+<style>
+  :root { --p:#444; --f:#fafafa; --t:#222; --borde:rgba(0,0,0,.1); }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+         background:var(--f); color:var(--t); padding-bottom:84px; }
+  header { background:var(--p); color:#fff; padding:14px 16px calc(14px) ; display:flex; gap:12px; align-items:center;
+           padding-top:calc(14px + env(safe-area-inset-top)); }
+  .logo { width:44px; height:44px; border-radius:50%; background:#fff; display:grid; place-items:center;
+          font-size:24px; overflow:hidden; flex:none; }
+  .logo img { width:100%; height:100%; object-fit:cover; }
+  header h1 { font-size:18px; margin:0; } header small { opacity:.85; }
+  main { padding:16px; max-width:640px; margin:0 auto; }
+  .card { background:#fff; border:1px solid var(--borde); border-radius:14px; padding:16px; margin-bottom:12px; }
+  .grande { font-size:34px; font-weight:700; color:var(--p); }
+  .fila { display:flex; justify-content:space-between; gap:8px; padding:8px 0; border-bottom:1px solid var(--borde); }
+  .fila:last-child { border:0; }
+  .gris { opacity:.6; font-size:14px; }
+  h2 { font-size:15px; text-transform:uppercase; letter-spacing:.04em; opacity:.7; margin:18px 0 8px; }
+  .prods { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:8px; }
+  .prod { background:#fff; border:1px solid var(--borde); border-radius:12px; padding:12px; text-align:left;
+          font:inherit; color:inherit; cursor:pointer; min-height:72px; }
+  .prod b { display:block; font-size:15px; } .prod span { color:var(--p); font-weight:600; }
+  .prod:active { transform:scale(.97); }
+  .btn { background:var(--p); color:#fff; border:0; border-radius:12px; padding:14px 18px; font:inherit;
+         font-weight:700; font-size:17px; width:100%; cursor:pointer; }
+  .btn.sec { background:#fff; color:var(--p); border:2px solid var(--p); }
+  .btn:disabled { opacity:.4; }
+  .chips { display:flex; gap:8px; flex-wrap:wrap; margin:10px 0; }
+  .chip { border:2px solid var(--p); color:var(--p); background:#fff; border-radius:99px; padding:8px 14px;
+          font:inherit; cursor:pointer; }
+  .chip.on { background:var(--p); color:#fff; }
+  input { font:inherit; font-size:18px; padding:12px; border:1px solid var(--borde); border-radius:10px; width:100%; }
+  nav { position:fixed; bottom:0; left:0; right:0; background:#fff; border-top:1px solid var(--borde);
+        display:flex; padding-bottom:env(safe-area-inset-bottom); }
+  nav button { flex:1; background:none; border:0; padding:10px 0 12px; font:inherit; font-size:12px; color:var(--t);
+               opacity:.55; cursor:pointer; }
+  nav button i { display:block; font-style:normal; font-size:22px; }
+  nav button.on { opacity:1; color:var(--p); font-weight:700; }
+  .carrito { position:sticky; bottom:84px; margin-top:16px; }
+  .x { background:none; border:0; color:#b91c1c; font-size:18px; cursor:pointer; }
+  .toast { position:fixed; left:50%; top:calc(12px + env(safe-area-inset-top)); transform:translateX(-50%); background:#222; color:#fff;
+           padding:12px 18px; border-radius:12px; display:flex; gap:14px; align-items:center; z-index:9; }
+  .toast button { background:none; border:0; color:#fde68a; font:inherit; font-weight:700; cursor:pointer; }
+  .vacio { text-align:center; opacity:.5; padding:24px 0; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo" id="logo"></div>
+  <div><h1 id="nombre"></h1><small id="eslogan"></small></div>
+</header>
+<main id="vista"></main>
+<nav id="nav"></nav>
+<script src="app.js"></script>
+</body>
+</html>

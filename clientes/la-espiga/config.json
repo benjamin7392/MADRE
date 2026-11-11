@@ -1,0 +1,47 @@
+{
+  "id": "la-espiga",
+  "nombre": "Panadería La Espiga",
+  "nombreCorto": "La Espiga",
+  "eslogan": "Pan casero todos los días",
+  "logo": "",
+  "emoji": "🥖",
+  "colores": {
+    "principal": "#B45309",
+    "fondo": "#FFF8EE",
+    "texto": "#2B1D0E"
+  },
+  "moneda": "$",
+  "whatsapp": "5493810000000",
+  "mediosDePago": ["Efectivo", "Transferencia", "Tarjeta"],
+  "modulos": {
+    "ventas": true,
+    "gastos": true
+  },
+  "categorias": [
+    {
+      "nombre": "Panes",
+      "productos": [
+        { "nombre": "Pan francés (kg)", "precio": 2500 },
+        { "nombre": "Pan de campo", "precio": 3200 },
+        { "nombre": "Pan integral", "precio": 3500 }
+      ]
+    },
+    {
+      "nombre": "Facturas",
+      "productos": [
+        { "nombre": "Medialuna", "precio": 400 },
+        { "nombre": "Docena de facturas", "precio": 4500 },
+        { "nombre": "Vigilante", "precio": 450 }
+      ]
+    },
+    {
+      "nombre": "Tortas y otros",
+      "productos": [
+        { "nombre": "Pasta frola", "precio": 6000 },
+        { "nombre": "Chipá (100 g)", "precio": 1200 },
+        { "nombre": "Prepizza", "precio": 1500 }
+      ]
+    }
+  ],
+  "rubrosGasto": ["Harina", "Insumos", "Luz y gas", "Sueldos", "Otros"]
+}

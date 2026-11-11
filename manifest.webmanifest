@@ -1,0 +1,9 @@
+{
+  "name": "Mi Negocio",
+  "short_name": "Mi Negocio",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#444444",
+  "icons": []
+}
