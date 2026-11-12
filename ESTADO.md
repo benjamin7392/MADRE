@@ -13,6 +13,10 @@ Se abre con `?c=<id>` en el link. Los datos de cada negocio quedan en su celular
 - Funciona sin internet (sw.js) y se puede instalar en el celular.
 - Cliente de prueba: `clientes/la-espiga` (Panadería La Espiga).
 
+## Alta de clientes
+- `docs/CUESTIONARIO-CLIENTE.md`: preguntas para el cliente (se manda por WhatsApp).
+- `docs/PROMPT-NUEVO-CLIENTE.md`: prompt fijo + catálogo de módulos (qué existe y qué falta).
+
 ## Próximos pasos
 1. Probar en el celular y pulir lo que se vea.
 2. Modo Demo (cambiar nombre y color en vivo, sin guardar).
